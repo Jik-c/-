@@ -1,0 +1,22 @@
+h1,h2{
+  color:grey
+}
+h1{
+  border-bottom: 1px solid black;
+  border-bottom: 2vw;
+}
+p{
+  color: maroon;
+  border-bottom: 5vw;
+}
+body {
+  font-family: Arial;
+  font-size: 1.5em;
+  font-size: 5vh;
+}
+em{
+  font-family: "Cascadia Mono";
+}
+html{
+  font-size: 5rem;
+}
