@@ -23,7 +23,19 @@ background-color: #a7cece;
 padding: 25px;
 margin: 30px;
 line-height: 1.9em;
-font-style: italic;
+font-style: hormal;
+font-size: 1.3em;
 color: #444444;
 font-family: 'Times New Roman', Times, serif;
+background-image: url(images/background.gif);
+background-repeat: no-repeat;
+background-position: top left;
+padding: 25px;
+padding-left: 80px;
+margin-right: 250px;
+
+}
+p{
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
