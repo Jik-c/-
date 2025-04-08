@@ -64,3 +64,23 @@ p{
 .elixirs > h3{
   color: #d12c47;
 }
+p{
+  color: red;
+  color: green;
+}
+
+p{
+  color: brown;
+}
+
+body p{
+  color: hotpink;
+}
+
+p.cname{
+  color: aquamarine;
+}
+
+p#iname{
+  color: grey;
+}
