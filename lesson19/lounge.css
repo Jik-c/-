@@ -1,0 +1,117 @@
+body{
+  font-size:small;
+  font-family: Verdana,Helvetica,Arial;
+  line-height: 1.6em;
+  
+  
+  
+}
+h1,h2{
+  color:#007e7e
+}
+h1{
+  font-size: 1.5em;
+}
+h2{
+  font-size: 1.3em;
+  color: black;
+}
+  div h2{
+    color:black ;
+ }
+
+.guarantee{
+border-color: white;
+border-width: 1px;
+border-style: dashed;
+background-color: #a7cece;
+padding: 25px;
+margin: 30px;
+line-height: 1.9em;
+font-style: hormal;
+font-size: 1.3em;
+color: #444444;
+font-family: 'Times New Roman', Times, serif;
+background-image: url(images/background.gif);
+background-repeat: no-repeat;
+background-position: top left;
+padding: 25px;
+padding-left: 80px;
+margin-right: 250px;
+
+}
+p{
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+.elixirs{
+  border-width: thin;
+  border-style: solid;
+  border-color: #007e7e;
+  width: 200px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  background-image: url(images/cocktail.gif);
+  background-repeat: repeat-x;
+  text-align: center;
+  line-height: 1;
+}
+.elixirs h2{
+  color:black;
+}
+.elixirs > h3{
+  color: #d12c47;
+}
+.cd{
+  font-style: italic;
+}
+.artist{
+  font-weight: bold;
+}
+.elixirs a:link{
+  color: #007e7e;
+}
+  .elixirs a:visited{
+    color: #333333;
+  }
+.elixirs a:hover{
+  background: #f88396;
+  color: #0d5353;
+}
+
+.left{
+  margin-right: 10px;
+}
+
+.right{
+  margin-left: 20px;
+}
+
+.ruler{
+  display: inline-block;
+  width: 30px;
+}
+
+.right {
+	float: right;
+}
+
+div.block {
+	width: 45vw;
+	height: 20vh;
+	border: 2px solid black;
+}
+
+.top {
+	margin-bottom: 10px;
+}
+
+.bottom {
+	margin-top: 20px;
+}
+
+.ruler {
+	height: 20px;
+}
