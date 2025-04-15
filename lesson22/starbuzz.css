@@ -5,37 +5,37 @@ body {
   margin:           0px;
 }
 
-#header {
+/* Change #header to .header */
+.header {
   background-color: #675c47;
   margin:           10px;
   height:           108px;
 }
 
-#main {
+/* Change #main to .main */
+.main {
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 250px 10px 10px;
+  margin:           0px 10px 10px 10px;
 }
 
-#sidebar {
-  float: left; 
+/* Change #sidebar to .sidebar */
+.sidebar {
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
   margin:           0px 10px 10px 10px;
-  float: right;
-  width: 200px;
 }
 
-#footer {
+/* Change #footer to .footer */
+.footer {
   background-color: #675c47;
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
   margin:           10px;
   font-size:        90%;
-  clear: right;
 }
 
 h1 {
@@ -76,11 +76,8 @@ a:visited {
   width: 280px;
 }
 
-.ad {
-	position:        absolute;
-	top:                150px;
-	left:               100px;
-	width:              600px;
-	height:              80px;
-	background-color: #ccbb00;
+.main {
+	position: relative;
+	top:           0px;
+	left:        200px;
 }
