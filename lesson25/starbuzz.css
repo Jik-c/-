@@ -1,0 +1,96 @@
+body { 
+  background-color: #b5a789; /* 背景色 */
+  font-family:      Georgia, "Times New Roman", Times, serif; /* 字体 */
+  font-size:        small; /* 字体大小 */
+  margin:           0px; /* 外边距 */
+}
+
+.header {
+  background-color: #675c47; /* 背景色 */
+  margin:           10px; /* 外边距 */
+  height:           108px; /* 高度 */
+}
+
+.main {
+  background:       #efe5d0 url(images/background.gif) top left; /* 背景色 */
+  font-size:        105%; /* 字体大小 */
+  padding:          15px;   /* 内边距 */
+  /*margin:           0px 10px 10px 10px; */  /* 外边距 */
+  display: table-cell; /* 显示方式 */
+  vertical-align: top; /* 垂直对齐方式:顶端对齐 */
+  border-spacing: 10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/;
+}
+
+.sidebar {
+  background:       #efe5d0 url(images/background.gif) bottom right; /* 背景色 */
+  font-size:        105%; /* 字体大小 */
+  padding:          15px;   /* 内边距 */
+  /*margin:           0px 10px 10px 10px; */  /* 外边距 */
+  display: table-cell; /* 显示方式 */
+  vertical-align: top; /* 垂直对齐方式:顶端对齐 */
+  border-spacing: 10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/;
+}
+
+.footer {
+  background-color: #675c47; /* 背景色 */
+  color:            #efe5d0; /* 字体颜色 */
+  text-align:       center; /* 文本对齐方式 */
+  padding:          15px;  /* 内边距 */
+  margin:           10px;  /* 外边距 */
+  font-size:        90%;   /* 字体大小 */
+  clear: both; /* 清除浮动，避免影响页脚布局 */
+}
+
+h1 {
+  font-size:        120%; /* 字体大小 */
+  color:            #954b4b; /* 字体颜色 */
+}
+
+.slogan {
+   color: #954b4b;  /* 字体颜色 */
+  } 
+
+.beanheading {
+  text-align:       center;  /* 文本对齐方式 */
+  line-height:      1.8em;  /* 行高 */
+}
+
+a:link {
+  color:            #b76666; /* 链接颜色 */
+  text-decoration:  none; /* 文本装饰 */
+  border-bottom:    thin dotted #b76666; /* 边框 */
+}
+a:visited {
+  color:            #675c47; /* 链接颜色 */
+  text-decoration:  none; /* 文本装饰 */
+  border-bottom:    thin dotted #675c47;  /* 边框 */
+}
+
+.allcontent {
+	/*width:               800px; /* 宽度 */
+	padding-top:           5px; /* 内边距 */
+	padding-bottom:        5px; /* 内边距 */ 
+	background-color:  #675c47; /* 背景色 */ 
+  /*margin-left: auto;  /* 外边距 */
+  /*margin-right: auto;  /* 外边距 */
+}
+
+div.tableContainer {
+  display: table;
+  border-spacing: 10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/
+}
+
+div.talbeRow {
+  display: table-row;
+}
+
+.drinks {
+  display: table-cell; /* 显示方式 */
+  background-color: #efe5d0; /* 背景色 */
+  padding: 15px; /* 内边距 */
+} 
+
+.img{
+  position: relative; /* 相对定位 */
+  float: right; /* 浮动 */;
+}

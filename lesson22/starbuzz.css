@@ -81,3 +81,9 @@ a:visited {
 	top:           0px;
 	left:        200px;
 }
+
+.award {
+	position:fixed ;
+	top: 30px;
+	left: 45%;
+}
