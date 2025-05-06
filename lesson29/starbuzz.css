@@ -1,0 +1,153 @@
+body {
+  background-color: #b5a789;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  margin: 0;
+}
+
+header.top {
+  background-color: #675c47;
+  margin: 10px;
+  height: 108px;
+}
+
+
+section.main, section.blog{
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) top left;
+  font-size: 105%;
+  padding: 15px;
+  width: 70%; /* 主内容区域占比 */
+  vertical-align: top;  /* 垂直对齐: 顶端对齐 */
+}
+
+aside{
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) bottom right;
+  font-size: 105%;
+  padding: 15px;
+  width: 30%; /* 侧边栏区域占比 */
+}
+
+footer {
+  background-color: #675c47;
+  color: #efe5d0;
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+  font-size: 90%;
+}
+
+h1 {
+  font-size: 120%;
+  color: #954b4b;
+}
+
+.slogan {
+  color: #954b4b;
+}
+
+.beanheading {
+  text-align: center;
+  line-height: 1.8em;
+}
+
+a:link {
+  color: #b76666;
+  text-decoration: none;
+  border-bottom: thin dotted #b76666;
+}
+
+a:visited {
+  color: #675c47;
+  text-decoration: none;
+  border-bottom: thin dotted #675c47;
+}
+
+/* 修正拼写错误，同时确保正确设置表格容器 */
+div.tableContainer {
+  display: table;
+  border-spacing: 10px;  /* 为表格中地单元格设置 10px 的边框间距（相当于外边距）*/
+}
+
+/* 修正拼写错误，设置表格行 */
+div.tableRow {
+  display: table-row;
+}
+
+/* 调整 main 宽度，为 drinks 留出空间 */
+
+
+/* 添加 drinks 样式，使其和 main 并排 */
+.drinks {
+  display: table-cell;
+  vertical-align: top;
+  background: #efe5d0;
+  padding: 15px;
+  width: 20%; 
+}
+
+/* 调整侧边栏宽度 */
+aside{
+  display: table-cell;
+  vertical-align: top;
+  background: #efe5d0 url(images/background.gif) bottom right;
+  font-size: 105%;
+  padding: 15px;
+  width: 30%; 
+}
+.header-left {
+  background-image: url(images/header.gif);
+  width: 300px;
+  height: 108px;
+}
+
+.header-right  {
+  background-image: url(images/header.gif);
+  width: 300px;
+  height: 108px;
+  background-position-x: -500px;
+  z-index: 10;
+  float: right;
+}
+.award {
+	position: fixed;
+	top: 30px;
+	left: 45%;
+}
+.coupon{
+	position: fixed;
+	top: 350px;
+	left: -210px;
+  transition: left 0.5s ease;
+}
+aside:hover {
+	left: 0px; /* 悬停时移动到 0px 的位置 */
+}
+ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+ul li {
+	display: inline;
+	padding: 5px 10px 5px 10px;
+}
+ul li a:link, nav ul li a:visited {
+	color: #954b4b;
+	border-bottom: none;
+	font-weight: bold;
+/*
+	text-shadow: 1px 1px 3px #e2c2c2; 
+	text-transform: uppercase;
+*/
+}
+
+ul li.selected {
+	background-color: #c8b99c;
+}
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
