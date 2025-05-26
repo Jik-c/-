@@ -1,0 +1,244 @@
+/* 左上角LOGO样式（固定定位） */
+.img1 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1002;
+}
+
+.img1 img {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+/* 左侧导航栏样式 */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100vh;
+  background-color: #1b3b86;
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
+  padding-top: 200px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  font-size: 100
+  padding-top 0;
+}
+
+/* 导航栏列表样式 */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 一级导航按钮样式 */
+nav button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: nor;
+  transition: background-color 0.3s;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  line-height: 1.5px;
+  font-weight: normal;
+  padding-top: 0%;
+}
+
+nav button:hover {
+  background-color: #2c4d96;
+}
+
+/* 修改一级导航项的定位，以便获取位置信息 */
+nav li {
+  position: relative;
+  --top: 0px;
+}
+
+/* 鼠标悬停时设置自定义属性，定位二级菜单 */
+nav li:hover {
+  --li-top: var(--top, 20%);
+}
+
+nav li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  --y: 0px;
+}
+
+nav li:hover::before {
+  --top: calc(var(--y, 0px) + 200px); /* 200px 是导航栏顶部 padding */
+}
+
+/* 二级菜单样式 */
+.sub-menu {
+  position: fixed;
+  left: 151px;
+  top: 0px;
+  height: 100vh;
+  transform: translateY(calc(var(--li-top) - 200px 100px));
+  background-color: #2c4e96ac;
+  padding: 10px 20px;
+  min-width: 200px;
+  display: none;
+  z-index: 1001;
+  box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.1);
+  max-height: 100vh;
+  overflow-y: auto;
+  bottom: 100px;
+  text-emphasis: none;
+  padding-top: 200px;
+}
+
+/* 展开二级菜单 */
+nav li:hover .sub-menu {
+  display: block;
+}
+
+/* 二级菜单列表项样式 */
+.sub-menu li {
+  padding: 0;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-size: nor;
+}
+
+
+
+/* 三级菜单样式 */
+.h11, .h12 {
+  padding-left: 20px;
+  position: fixed;
+  left: 391px;
+  top: 0;
+  height: 100vh;
+  transform: translateY(calc(var(--li-top) - 200px 100px));
+  background-color: #2c4e96ac;
+  padding: 10px 20px;
+  min-width: 200px;
+  display: none;
+  z-index: 1001;
+  box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  bottom: 100px;
+  text-emphasis: none;
+  align-items: center;
+  padding-top: 200px;
+  width: 60%;
+  list-style-type: none;
+}
+
+/* 展开三级菜单，将触发条件从一级导航改为二级菜单列表项悬停 */
+.sub-menu li:hover .h11, .sub-menu li:hover .h12 {
+  display: block;
+}
+
+/* 三级导航列表项样式 */
+.h11 li, .h12 li {
+  padding: 0;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+/* 三级菜单列表悬浮样式 */
+
+
+
+/* 底部垂直功能区样式 */
+.bottom-left-container {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 搜索按钮样式 */
+.h8 button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40px;
+}
+
+.h8 img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* 后援按钮、校园地图和语言切换样式 */
+.fund-donate, .h9, .h10 {
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40px;
+  transition: background-color 0.3s;
+}
+
+.fund-donate:hover, .h9:hover, .h10:hover {
+  text-decoration: none;
+}
+
+/* 全局超链接样式重置 */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+}
+
+a:hover, a:active, a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+h6 {
+  margin-bottom: 20px; /* 为 h6 底部添加间距 */
+  position: relative;
+}
+
+h6::after {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* 调整分栏符的位置 */
+  left: 0;
+  width: 100%;
+  height: 2px; /* 分栏符的高度 */
+  background-color:#fff; /* 分栏符的颜色 */
+  z-index: index 3000;
+
+}
+
