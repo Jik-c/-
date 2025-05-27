@@ -7,7 +7,7 @@
 }
 
 .img1 img {
-  width: 90px;
+  width: 150px;
   height: auto;
   display: block;
 }
@@ -17,17 +17,18 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10%;
+  width: 13%;
   height: 100vh;
   background-color: #1b3b86;
   color: #fff;
   z-index: 1000;
   box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
-  padding-top: 200px;
+  /* 调整 padding-top 使导航栏在 logo 下方 */
+  padding-top: 190px; 
   box-sizing: border-box;
   overflow-y: hidden;
-  font-size: 100
-  padding-top 0;
+  font-size: 100px;
+  
 }
 
 /* 导航栏列表样式 */
@@ -44,16 +45,16 @@ nav button {
   border: none;
   color: #fff;
   cursor: pointer;
-  font-size: nor;
+  font-size: 16px; /* 修正错误的 nor */
   transition: background-color 0.3s;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  line-height: 1.5px;
+  line-height: 1.5; /* 修正错误的 1.5px */
   font-weight: normal;
-  padding-top: 0%;
+  padding-top: 0;
 }
 
 nav button:hover {
@@ -89,7 +90,7 @@ nav li:hover::before {
 /* 二级菜单样式 */
 .sub-menu {
   position: fixed;
-  left: 151px;
+  left: 198px;
   top: 0px;
   height: 100vh;
   transform: translateY(calc(var(--li-top) - 200px 100px));
@@ -113,22 +114,26 @@ nav li:hover .sub-menu {
 
 /* 二级菜单列表项样式 */
 .sub-menu li {
-  padding: 0;
+  padding: 0; /* 确保内边距为 0 */
+  margin: 0; /* 新增，确保外边距为 0 */
   transition: background-color 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
-  font-size: nor;
+  font-size: 16px; /* 修正错误的 nor */
 }
 
-
+/* 二级菜单列表项悬停样式 */
+.sub-menu li:hover {
+  background-color: #1b3b86;
+}
 
 /* 三级菜单样式 */
 .h11, .h12 {
   padding-left: 20px;
   position: fixed;
-  left: 391px;
+  left: 438px;
   top: 0;
   height: 100vh;
   transform: translateY(calc(var(--li-top) - 200px 100px));
@@ -147,7 +152,7 @@ nav li:hover .sub-menu {
   list-style-type: none;
 }
 
-/* 展开三级菜单，将触发条件从一级导航改为二级菜单列表项悬停 */
+/* 展开三级菜单 */
 .sub-menu li:hover .h11, .sub-menu li:hover .h12 {
   display: block;
 }
@@ -163,8 +168,9 @@ nav li:hover .sub-menu {
 }
 
 /* 三级菜单列表悬浮样式 */
-
-
+.h11 li:hover, .h12 li:hover {
+  background-color: #1b3b86;
+}
 
 /* 底部垂直功能区样式 */
 .bottom-left-container {
@@ -230,15 +236,25 @@ h6 {
   position: relative;
 }
 
-h6::after {
-  content: "";
-  position: absolute;
-  bottom: 10px; /* 调整分栏符的位置 */
-  left: 0;
-  width: 100%;
-  height: 2px; /* 分栏符的高度 */
-  background-color:#fff; /* 分栏符的颜色 */
-  z-index: index 3000;
-
+/* 当鼠标悬停在一级导航项时，显示二级和三级菜单 */
+nav li:hover .sub-menu,
+nav li:hover .sub-menu .h11,
+nav li:hover .sub-menu .h12 {
+    display: block;
 }
 
+.divider-line {
+  border: none;/*清除默认样式*/
+  border-top: 1px solid #ddd; /* 调整线的颜色和样式 */
+  margin: 10px auto; /* 修改为自动分配左右外边距以实现居中 */
+  width: 50%; /* 调整线的宽度 */
+  right: 10px; /* 调整线的位置 */
+   }
+.h7{
+  left: 10px;
+  margin-bottom: 10px; /* 为分栏横线底部添加间距 */
+}
+
+.h8{
+  margin-bottom:-50px;
+}
