@@ -1,0 +1,225 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 导航栏主样式 */
+.snu-navbar {
+    width: 240px;
+    height: 100vh;
+    background-color: #0b3c82; /* 深蓝色背景 */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 标题样式 */
+.nav-header {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Logo样式 */
+.logo {
+    margin: 5px auto 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+    width: 200px;
+}
+
+.nav-header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* 导航链接容器 */
+.nav-links {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* 导航项目样式 */
+.nav-item {
+    width: 100%;
+    text-align: center;
+    /* position: relative; */
+}
+
+.nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+/* 导航项目悬停效果 */
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item:hover .submenu {
+    display: flex; /* 悬停时显示子菜单 */
+}
+
+/* 分隔线 */
+.nav-item.divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+}
+
+/* 最后三项导航的特殊样式 */
+.nav-links li:nth-last-child(2),
+.nav-links li:nth-last-child(1) {
+    margin-top: auto;
+}
+
+/* 英文版按钮 */
+.nav-links li:last-child a {
+    font-size: 14px;
+}
+
+/* 子菜单样式 */
+.submenu {
+    position: absolute;
+    left: 240px;  /* 与主菜单宽度相同 */
+    top: 0;
+    width: 780px;
+    height: 100%;
+    background-color: rgba(27, 59, 134, 0.9); /* 稍浅一点的蓝色 */
+    display: none; /* 默认隐藏 */
+    padding: 125px 20px 0 40px;
+    overflow-y: auto;
+    z-index: 900;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* 保持子菜单在悬停时显示 */
+.submenu:hover {
+    display: flex;
+}
+
+/* 子菜单项目样式 */
+.submenu-item {
+    padding: 10px 15px;
+    position: relative;
+    margin-bottom: 20px; /* 增加项目间距 */
+    display: flex;
+    width: 171px;
+    flex-direction: column; /* 垂直排列标题和内容 */
+}
+
+.submenu-title {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    width: auto; /* 改为自动宽度 */
+    padding: 10px 0 5px 15px; /* 调整内边距 */
+    font-weight: bold; /* 加粗标题 */
+}
+
+.submenu-title .arrow {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* 子菜单内容样式 */
+.submenu-content {
+    list-style: none;
+    display: block; /* 默认显示，不需要悬停 */
+    padding: 5px 0 15px 15px; /* 调整内边距，增加左边距以形成层级关系 */
+}
+
+.submenu-content li {
+    text-align: left;
+    padding: 3px 0; /* 减少内边距 */
+    margin-left: 10px; /* 重置左边距 */
+}
+
+.submenu-content li a {
+    color: rgba(255, 255, 255, 0.9); /* 稍微降低透明度以区分层级 */
+    text-decoration: none;
+    font-size: 13px; /* 稍微减小字体 */
+    display: block;
+    padding: 3px 0;
+    transition: color 0.2s ease; /* 添加过渡效果 */
+}
+
+.submenu-content li a:hover {
+    color: white; /* 悬停时变为纯白色 */
+}
+
+/* 活动状态样式 */
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item.active .submenu {
+    display: flex; /* 活动状态时显示子菜单 */
+}
+
+.submenu-item.active .submenu-content {
+    display: block;
+}
+
+/* 遮罩层 - 点击空白处关闭菜单 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 800;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+} 
+
+.ss{
+    margin: 5px auto 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.ss img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 100px;
+}
