@@ -1,0 +1,199 @@
+.jy-lmq{
+  position: relative; /* 设置为相对定位 */
+  left: 5%;
+  margin-top: 50px;
+}
+.flex-images {
+    gap: 30px; /* 减小图片间的间距，可按需调整 */
+    /*padding:0 100px; /* 给容器左右添加较大的内边距，可按需调整 */
+    padding-right: 200px;
+    padding-left: 200px; /*左边 */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 四个列 */
+  }
+  .flex-images > div {
+    display: flex;
+    flex-direction: column; /* 让子元素垂直排列 */
+    align-items: flex-start; /* 修改为从左侧对齐 */
+  }
+  .arawd {
+    width: 5%; /* 原宽度为 10%，现减小为 5%，可按需调整 */
+    height: auto;
+    margin: 20px;
+  }
+  
+  .bold-text, .sub {
+      margin: 10px; /* 和 .arawd 类的边距保持一致 */
+  }
+  .sub{
+    color:rgb(102,102,102);
+    /* 添加灰色虚线边框 */
+    border-bottom: 1px dashed rgb(192,192,192); 
+    padding-top: 5px; /* 设置上内边距为 10px */
+    padding-bottom: 25px; /* 设置下内边距为 10px */
+  }
+  
+  .flex-images img {
+      width: 250px; /* 原宽度为 300px，现减小为 200px，可按需调整 */
+      height: auto; 
+      margin-bottom: 2px; 
+      padding-top: 1px; 
+      padding-right:1px; 
+      padding-bottom: 1px; 
+      padding-left: 3px; 
+  }
+  
+  .top{
+      font-weight: bold; 
+      text-align: left; 
+      width: 100%; 
+      color: #1b3b86;
+      padding-bottom: 5px;
+      font-size: 15px;
+      margin: 0.5px; 
+      /* 增加 margin-top 值让文字往下移动，可按需调整 */
+      margin-top: 30px; 
+      /* 或者使用 padding-top，也能达到类似效果 */
+      /* padding-top: 30px; */
+  }
+  .grid-container {
+    
+    padding: 1px; /* 减小内边距，让内容和边框距离更近 */
+    margin: 3px; /* 减小外边距，让格子和其他元素距离更近 */
+    border-radius: 4px; /* 可选：保持圆角 */
+      padding: 5px; 
+      margin: 5px; 
+      border-radius: 4px; 
+  }
+  .grid-container .bold-text,
+  .grid-container .sub {
+      /* 可以根据需求调整左外边距的值，让文字左移 */
+      margin-left: 2px; 
+      /* 也可以使用 padding-left，不过 margin 通常更合适 */
+      /* padding-left: -10px; */ 
+  }
+  
+  /* 增大 .bold-text 元素底部的外边距，从而增加与 .sub 元素的间距 */
+  .bold-text {
+    font-weight: bold;
+    margin-bottom: 2px; /* 可根据实际需求调整数值 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    text-overflow: ellipsis; /* 溢出内容用省略号表示 */
+    white-space: normal; /* 正常换行 */
+    word-wrap: break-word; 
+  }
+  
+  
+  .top, .bold-text, .sub {
+      letter-spacing: -0.5px; /* 可根据实际效果调整该值，负数让间距更紧 */
+  }
+  
+  .centered-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /* 若需要垂直居中，可以添加以下样式 */
+      /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+  }
+  
+  .image-with-line {
+      display: flex; /* 使用弹性布局 */
+      align-items: center; /* 垂直居中对齐 */
+      padding-left: 15px; 
+      padding-right: 20px;
+  }
+  /* 统一设置 image-with-line 和 flex-images 的外边距和内边距 */
+  .image-with-line, .flex-images {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-left: 1px;
+    /* 可以根据实际情况调整最大宽度 */
+    max-width: 1190px; 
+    box-sizing: border-box;
+  }
+  /* 设置图片宽度为容器的 100%，确保左右边界对齐 */
+  .image-with-line .play {
+    display: block;
+    width: 25%;
+    height: auto;
+      /* 为图片添加左边外边距，可根据需求调整值，让图片右移 */
+    margin-left: 10px; 
+    
+  }
+  .image-with-line::after {
+      margin-top: -1.8%;
+      position: relative;
+      left: 2%;
+      content: "";
+      flex-grow: 1; /* 让横线占据剩余空间 */
+      height: 4px; /* 横线高度，可按需调整 */
+      background-color: #000; /* 横线的颜色 */
+  }
+  
+  /* 设置 .grid-container 内的超链接颜色和 .bold-text 一致 */
+  .grid-container a {
+    color: inherit; /* 继承父元素颜色 */
+    text-decoration: none; /* 去掉下划线 */
+  
+  }
+  
+  .grid-container a:hover {
+    color: inherit; /* 鼠标悬停时也保持颜色不变 */
+  }
+  
+  
+  /* 调整图片和下方文字的上下边距 */
+  .grid-container a img {
+    margin-bottom: 10px; /* 可按需调整图片底部外边距 */
+  }
+  
+  .grid-container a .top{
+  margin-bottom: 5px; /* 可按需调整底部外边距 */
+  display: inline-block; /* 确保边距生效（针对行内元素） */
+  }
+  /* 调整黑色文字的上下外边距 */
+  .grid-container a .bold-text {
+    overflow: hidden; /* 隐藏溢出内容 */
+    text-overflow: ellipsis; /* 溢出内容用省略号表示 */
+    white-space: normal; /* 正常换行 */
+    word-wrap: break-word; /* 允许单词换行 */
+    line-height: 20px; 
+    letter-spacing: -0.025em; 
+    margin-top: 15px; /* 可按需调整顶部外边距 */
+    margin-bottom: 10px; /* 可按需调整底部外边距 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 最多显示的行数 */
+    line-clamp: 3; /* 定义标准属性以实现兼容性 */
+    -webkit-box-orient: vertical; /* 垂直方向排列 */
+    hyphens: auto; /* 自动断句 */
+  }
+  
+  /* 调整灰色文字的上下外边距，减小字体大小并加粗 */
+  .grid-container a .sub {
+    letter-spacing: -0.025em; 
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* 最多显示的行数 */
+    line-clamp: 5; /* 定义标准属性以实现兼容性 */
+    -webkit-box-orient: vertical; /* 垂直方向排列 */
+    hyphens: auto; /* 自动断句 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    text-overflow: ellipsis; /* 溢出内容用省略号表示 */
+    white-space: normal; /* 正常换行 */
+    word-wrap: break-word; /* 允许单词换行 */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block; /* 确保边距生效（针对行内元素） */
+  border-bottom: 1px dashed rgb(192, 192, 192); /* 添加灰色虚线 */
+  font-size: 14px; /* 可按需调整字体大小 */
+  font-weight: 546; /* 可按需调整字体粗细，400 为正常，700 为粗体 */
+  }
+  .video-up {
+    margin-top: -15px; /* 可根据实际需求调整这个值 */
+    width: 295px;
+    height: 201px;
+  }
+  

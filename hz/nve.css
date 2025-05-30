@@ -1,0 +1,179 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.main-container {
+    position: relative;
+
+    width: 98%;
+    height: 800px /* 视窗高度 */
+    
+}
+.banner-video00 {
+    position: relative; /* 设置定位方式 */
+    left: 13%; /* 水平居中 */;
+    width: 89.01%; 
+    /* 修改视频高度，你可以根据需求调整数值 */
+    height: 772px;  
+    object-fit: cover; /* 保持视频的宽高比并覆盖整个容器 */
+}
+
+/* 新增导航栏容器样式 */
+.visitnav-container {
+    font-size: 14px; 
+    line-height: 1.5;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: -200px; /* 初始位置在页面右侧外 */
+    bottom: 0;
+    z-index: 1000;
+    width: 313px; /* 一级导航栏宽度 + 二级导航栏最小宽度 */
+    height: 400px;   /* 固定容器高度 */
+    overflow-y: auto;
+    background-color: transparent;; /* 容器背景颜色 */
+    transition: right 0.1s; /* 为容器添加过渡效果 */
+    display: flex; /* 使用 flexbox 布局 */
+    flex-direction: column; /* 设置垂直排列 */
+}
+
+.visitnav-container:hover {
+    right: 0; /* 鼠标悬停时，容器向左移动到页面内 */
+}
+
+.visitnav-list-d1 {
+    background: rgba(28, 36, 70, 0.8); /* 一级导航栏背景颜色 */
+    border-bottom: 1px solid rgba(49, 63, 90, 0.55); /* 一级导航栏底部边框 */
+    position: relative;
+    border-radius: 0; /* 移除圆角 */
+    box-shadow: none; /* 移除阴影 */
+    padding: 0;
+    width: 113px; /* 一级导航栏宽度 */
+    margin-bottom: 0; /* 移除底部间距 */
+    transition: transform 0.1s; /* 为一级导航栏添加过渡效果 */
+    z-index: 1001;
+
+}
+
+.visitnav-list-d1-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visitnav-list-d1-title {
+    display: flex; /* 使用 flexbox 布局 */
+    flex-direction: column; /* 设置垂直排列 */
+    align-items: center; /* 水平居中对齐 */
+    width: 100%;
+    background: none; /* 移除背景 */
+    border: none; /* 移除边框 */
+    padding: 12px 20px; /* 增加内边距 */
+    text-align: center; /* 文字居中 */
+    font-size: 13px;    /* 字体大小 */
+    line-height: 1.5; /* 行高 */
+    font-weight: 500; /* 设置字体粗细 */
+    color:gray;  /* 文字颜色 */
+    cursor: pointer; /* 鼠标指针样式 */
+    transition: background-color 0.1s, color 0.1s; /* 添加过渡效果 */
+}
+
+.visitnav-list-d1-title:hover {
+    background-color: #1b3b86; /* 鼠标悬停时背景颜色 */
+    color: white; /* 鼠标悬停时文字颜色 */
+}
+
+.visitnav-list-d2-list { 
+    display: none;  
+    position: fixed; /* 修改为固定定位 */
+    top: 0; /* 固定在页面顶部 */
+    left: calc(100% - 313px + 113px); /* 计算二级导航栏的左侧位置 */
+    background: #4670be; 
+    min-width: 100px; 
+    padding: 11px 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1001; 
+    transition: transform 0.1s;
+    /*transition: all 0.2s ease;   */
+    width: 160px;  /* 二级导航栏宽度 */
+    height: 366px;  
+
+} 
+
+.visitnav-list-d2-item{ 
+    top: 0;
+    margin-bottom: 8px;  /* 增加底部间距 */
+} 
+
+.visitnav-list-d2-title { 
+  
+    color: white; 
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 8px 12px;
+    display: block;
+    transition: all 0.1s ease;
+    position: relative; /* 为伪元素提供相对定位 */
+} 
+
+.visitnav-list-d2-title:hover { 
+    background: rgba(255,255,255,0.15); /* 悬停效果 */ 
+    transform: translateX(5px); 
+    border-radius: 3px;
+}
+.visitnav-list-d1:hover > button { 
+    color: #4670be;
+}
+.visitnav-list-d1:hover .visitnav-list-d2-list {
+    display: block; /* 鼠标悬停在一级导航栏时，显示二级导航栏 */
+}
+
+.visitnav-list-d2-item a {
+    display: block; /* 每个项目作为一个块级元素 */
+    margin-bottom: 7px; /* 项目之间的间距 */
+    font-size: 13px;    /* 字体大小 */
+    font-weight: 500;    
+    line-height: 30px; 
+    text-decoration: none;
+    padding: 0 10px; /* 增加左右内边距 */
+    transition: background-color 0.1s, color 0.1s; /* 添加过渡效果 */
+}
+
+.visitnav-list-d2-item a:hover {
+    background-color :#4e70be;/* 鼠标悬停时背景颜色 */
+}
+
+.visitnav-list-d1-title img {
+    width: 30px; /* 设置图片宽度 */
+    height: 23px; /* 设置图片高度 */
+    margin-bottom: 5px; /* 设置图片与文字的间距 */
+}
+
+/* 全局移除无序列表的默认样式 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+}
