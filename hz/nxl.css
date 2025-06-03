@@ -139,23 +139,23 @@
     color: gray;  /* 箭头颜色 */
     border: none;
     padding: 10px 20px;
-    right: -5px;
     font-size: 30px;
     cursor: pointer;
     z-index: 10;
     background-color: transparent; /* 确保背景颜色透明 */
     outline: none; /* 移除默认的焦点样式 */
+    margin-left: ;
 }
 .prev-arrow:hover, .next-arrow:hover {
     color:#1b3b86;
 }
 
 .prev-arrow {
-    left: 1400px; /* 左箭头靠右 */
+    left: 1350px; /* 左箭头位置再向右调整 */
 }
 
 .next-arrow {
-    right: 10px;
+    left: 1450px; /* 右箭头位置再向右调整 */
 }
 /* ... existing code ... */
 .only-mobile {
@@ -189,7 +189,6 @@
     color: gray;  /* 箭头颜色 */
     border: none;
     padding: 10px 20px;
-    right: -5px;
     font-size: 30px;
     cursor: pointer;
     z-index: 10;
@@ -201,11 +200,11 @@
 }
 
 .prev-arrow {
-    left: 1400px; /* 左箭头靠右 */
+    left: 1450px; /* 左箭头位置再向右调整 */
 }
 
 .next-arrow {
-    right: 10px;
+    left: 1550px; /* 右箭头位置再向右调整 */
 }
 .ly-container.common-linebanner {
     margin-top: -450px;
@@ -241,7 +240,6 @@
     color: gray;  /* 箭头颜色 */
     border: none;
     padding: 10px 20px;
-    right: -5px;
     font-size: 30px;
     cursor: pointer;
     z-index: 10;
@@ -253,11 +251,11 @@
 }
 
 .prev-arrow {
-    left: 1400px; /* 左箭头靠右 */
+    left: 1200px; /* 左箭头位置再向右调整 */
 }
 
 .next-arrow {
-    right: 10px;
+    left: 1250px; /* 右箭头位置再向右调整 */
 }
 .only-mobile {
   /* 通过设置 width 和 height 来缩小图片，这里设置为原来的 50%，可按需调整 */

@@ -1,687 +1,890 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>서울대학교</title>
     <link rel="icon" href="images/20wll.jpg" type="images/jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font.css">
+   
+  </head>
+  <body>
+    <nav class="snu-navbar">
+        <div class="nav-header">
+            <div class="logo">
+                <img src="images/logo.png" alt="서울대학교 로고">
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link">교육</a>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>대학</span>
+                            
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">학부대학</a></li>
+                            <li><a href="#">대학</a></li>
+                            <li><a href="#">교과과정</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>대학원</span>
+                            
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">일반대학원</a></li>
+                            <li><a href="#">전문대학원</a></li>
+                            <li><a href="#">교과과정</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>공개강좌</span>
+                        </a>
+                    </div>
+                    
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>교육지원</span>
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">전공설계</a></li>
+                            <li><a href="#">비교과프로그램</a></li>
+                            <li><a href="#">학점교류</a></li>
+                            <li><a href="#">국제교육프로그램</a></li>
+                            <li><a href="#">외국어교육프로그램</a></li>
+                            <li><a href="#">교수학습지원</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link">연구</a>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>연구성과</span>
+                        </a>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>연구현황</span>
+                        </a>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>연구자정보</span>
+                        </a>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>연구기관</span>
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">연구시설</a></li>
+                            <li><a href="#">국가지원연구센터</a></li>
+                            <li><a href="#">4단계 두뇌한국(BK)21사업</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>연구지원</span>
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">중점연구지원</a></li>
+                            <li><a href="#">학술연구지원</a></li>
+                            <li><a href="#">연구기자재지원</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link">입학</a>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>입학메인</span>
+                        </a>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>대학</span>
+                            
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">수시</a></li>
+                            <li><a href="#">정시</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>대학원</span>
+                            
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">일반대학원</a></li>
+                            <li><a href="#">전문대학원</a></li>
+                            <li><a href="#">계약학과</a></li>
+                            <li><a href="#">예비 대학원생</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>편입학</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link">대학생활</a>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>학생활동</span>
+                           
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">학생봉사</a></li>
+                            <li><a href="#">학생기구</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>캠퍼스생활</span>
+                            
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">도서관</a></li>
+                            <li><a href="#">관악학생생활관</a></li>
+                            <li><a href="#">경력개발센터</a></li>
+                            <li><a href="#">인권센터</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>학사행정</span>
+                           
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">학사일정</a></li>
+                            <li><a href="#">등록금납부</a></li>
+                            <li><a href="#">수업</a></li>
+                            <li><a href="#">학적</a></li>
+                            <li><a href="#">장학금·학자금</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link">서울대 소식</a>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>뉴스</span>
+                           
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">서울대뉴스</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">언론 속 서울대</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>SNU 미디어</span>
+                           
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">SNUNOW</a></li>
+                            <li><a href="#">서울대사람들</a></li>
+                            <li><a href="#">소셜미디어</a></li>
+                            <li><a href="#">스누새편지</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>SNU 캘린더</span>
+                        </a>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>공지사항</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item has-submenu">
+                <a href="#" class="nav-link">대학소개</a>
+                <div class="submenu">
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>대학현황</span>
+                            
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">비전</a></li>
+                            <li><a href="#">현황</a></li>
+                            <li><a href="#">재무정보공시</a></li>
+                            <li><a href="#">학칙 및 규정</a></li>
+                            <li><a href="#">조직도</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>대학상징</span>
+                        </a>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span class="arrow">›</span>
+                            <span>총장실</span>
+                            
+                        </a>
+                        <ul class="submenu-content">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">프로필</a></li>
+                            <li><a href="#">연설모음</a></li>
+                            <li><a href="#">역대총장</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-item">
+                        <a href="#" class="submenu-title">
+                            <span>역사</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item divider"></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">후원하기</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">캠퍼스맵</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">ENG</a>
+            </li>
+        </ul>
+    </nav>
 
-</head>
-
-<body>
+    <div class="overlay"></div>
+    
     <div class="wll">
-
-
-
         <link rel="stylesheet" href="nve.css">
-        <div class="main-container">
-            <video class="banner-video00" autoplay muted loop>
+     <div class="main-container">
+       <video class="banner-video00" autoplay muted loop >
        <source src="video/js.mp4" type="video/mp4">
        </video>
-            <!-- 新增导航栏容器 -->
-            <div class="visitnav-container">
-                <div class="visitnav-list-d1">
-                    <button class="visitnav-list-d1-title es" title="항목열기">
+       <!-- 新增导航栏容器 -->
+       <div class="visitnav-container">
+         <div class="visitnav-list-d1">
+           <button class="visitnav-list-d1-title es" title="항목열기">
              <img src="images/22wll.png" alt="图标1">  <!-- 添加图片 -->
              방문객
            </button>
-                    <div class="visitnav-list-d2-list es is-active">
-                        <ul>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">오시는길</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
-                        </ul>
-                    </div>
-                    <!--visitnav-list-d2-list-->
-                </div>
-                <!--visitnav-list-d1-->
-
-                <div class="visitnav-list-d1">
-                    <button class="visitnav-list-d1-title es" title="항목열기">
+            <div class="visitnav-list-d2-list es is-active">
+             <ul >
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">오시는길</a></li>
+             <li class="visitnav-list-d2-item" ><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
+             <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
+             </ul>   
+         </div>  <!--visitnav-list-d2-list-->
+       </div> <!--visitnav-list-d1-->
+          
+             <div class="visitnav-list-d1">
+                  <button class="visitnav-list-d1-title es" title="항목열기">
                    <img src="images/21wll.png" alt="图标2">  <!-- 添加图片 -->
                   예비신입생
               </button>
-                    <div class="visitnav-list-d2-list es">
-                        <ul>
-                            <li class="visitnav-list-d2-item"><a href="index.html" target="_self" class="visitnav-list-d2-title">입학도우미</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
-                        </ul>
-                    </div>
-                    <!--visitnav-list-d2-list-->
-                </div>
-                <!--visitnav-list-d1-->
-                <div class="visitnav-list-d1">
-                    <button class="visitnav-list-d1-title es" title="항목열기">
+               <div class="visitnav-list-d2-list es">
+                <ul >
+                 <li class="visitnav-list-d2-item"><a href="index.html"target="_self" class="visitnav-list-d2-title">입학도우미</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
+                </ul>
+               </div> <!--visitnav-list-d2-list-->
+             </div> <!--visitnav-list-d1-->
+             <div class="visitnav-list-d1">
+              <button class="visitnav-list-d1-title es" title="항목열기">
                <img src="images/23wll.png" alt="图标3">
                교수및연구진
              </button>
-                    <div class="visitnav-list-d2-list es">
-                        <ul>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">연구성과</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
-                        </ul>
-                    </div>
-                    <!--visitnav-list-d2-list-->
-                </div>
-                <!--visitnav-list-d1-->
-                <div class="visitnav-list-d1">
-                    <button class="visitnav-list-d1-title es" title="항목열기">
+              <div class="visitnav-list-d2-list es">
+                <ul >
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">연구성과</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
+                 <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
+                </ul>
+              </div> <!--visitnav-list-d2-list-->
+             </div> <!--visitnav-list-d1-->
+             <div class="visitnav-list-d1">
+              <button class="visitnav-list-d1-title es" title="항목열기">
                <img src="images/24wll.png" alt="图标4">
                동문
              </button>
-                    <div class="visitnav-list-d2-list es">
-                        <ul>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">서울대 소식</a>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
-                                <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
-                        </ul>
-                    </div>
-                    <!--visitnav-list-d2-list-->
-                </div>
-                <!--visitnav-list-d1-->
-                <div class="visitnav-list-d1">
-                    <button class="visitnav-list-d1-title es" title="항목열기">
+               <div class="visitnav-list-d2-list es">
+                <ul>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html"target="_self" class="visitnav-list-d2-title">서울대 소식</a>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
+                </ul>
+               </div> <!--visitnav-list-d2-list-->
+             </div> <!--visitnav-list-d1-->
+           <div class="visitnav-list-d1">
+            <button class="visitnav-list-d1-title es" title="항목열기">
              <img src="images/25wll.png" alt="图标5">
              재학생
            </button>
-                    <div class="visitnav-list-d2-list es">
-                        <ul>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
-                            <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
-                        </ul>
-                    </div>
-                    <!--visitnav-list-d2-list-->
-                </div>
-                <!--visitnav-list-d1-->
-            </div>
-            <!--visitnav-container-->
-        </div>
-        <!--main-container-->
-        <script>
-            window.addEventListener('scroll', function() {
-                const video = document.querySelector('.banner-video00');
-                const nav = document.querySelector('.visitnav-container');
-                if (video && nav) {
-                    const videoBottom = video.offsetTop + video.offsetHeight;
-                    const navBottom = window.pageYOffset + nav.offsetHeight;
-                    if (navBottom > videoBottom) {
-                        nav.style.display = 'none';
-                    } else {
-                        nav.style.display = 'flex';
-                    }
+              <div class="visitnav-list-d2-list es">
+               <ul >
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" class="visitnav-list-d2-title" target="_blank" title="새창으로 열림" rel="noopener noreferrer">캠퍼스맵(관악)</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">멀티캠퍼스</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 캘린더</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">SNU 미디어</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_self" class="visitnav-list-d2-title">편의시설(식당)</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">기념품몰</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">규장각</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">박물관</a></li>
+                  <li class="visitnav-list-d2-item"><a href="luxian.html" target="_blank" rel="noopener noreferrer" title="새창으로 열림" class="visitnav-list-d2-title">미술관</a></li>
+                </ul>
+               </div> <!--visitnav-list-d2-list-->
+             </div> <!--visitnav-list-d1-->
+       </div> <!--visitnav-container-->
+     </div> <!--main-container-->
+     <script>
+        window.addEventListener('scroll', function() {
+            const video = document.querySelector('.banner-video00');
+            const nav = document.querySelector('.visitnav-container');
+            if (video && nav) {
+                const videoBottom = video.offsetTop + video.offsetHeight;
+                const navBottom = window.pageYOffset + nav.offsetHeight;
+                if (navBottom > videoBottom) {
+                    nav.style.display = 'none';
+                } else {
+                    nav.style.display = 'flex';
                 }
-            });
-        </script>
-    </div>
-    <!--wll-->
+            }
+        });
+    </script>
+    </div> <!--wll-->
     <div class="jy-lmq">
         <link rel="stylesheet" type="text/css" href="starbuzz.css">
         <div class="image-with-line">
             <img src="images/11.png" class="play">
-
+            
         </div>
         <div class="flex-images">
             <!-- 包裹图片和文字的容器 -->
             <div class="grid-container">
-                <a href="index1.1.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.1.html"><img src="images/01.png" alt="인문학적 공학도의 스토리텔링 연구에 대하여: 제7회 스누인의 연구일지"> </a>
-                <a href="index1.1.html"><span class="bold-text">인문학적 공학도의 스토리텔링 연구에 대하여: 제7회 스누인의 연구일지</span></a>
-                <a href="index1.1.html"><span class="sub">지난 25일, 중앙도서관에서 열린 제7회 ‘스누인의 연구일
-              지’ 강연에서는 인문학과 공학을 융합한 이재성 연구자의 이야기가 소개됐다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <a href="index1.2.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.2.html"><img src="images/02.jpg" alt="학부대학, 융합형 미래 인재를 위한 새로운 교육 플랫폼"></a>
-                <a href="index1.2.html"><span class="bold-text">학부대학, 융합형 미래 인재를 위한 새로운 교육 플랫폼</span></a>
-                <a href="index1.2.html"><span class="sub">요구 속에서 넓은 시야와 문제 해결 역량을 키울 수 있는 새로운 교육
-          체계를 마련하고자 학문 간 경계를 허물고 공통교육을 강화하는 ‘학부대학’이 출범됐다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <!-- 为 <span> 标签添加超链接，可将 href 属性值替换为实际链接地址 -->
-                <a href="index1.3.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.3.html"><img src="images/03.jpg" alt="대학혁신센터 포럼, 장기적 안목으로 서울대학교의 발전을 논하다"></a>
-                <a href="index1.3.html"><span class="bold-text">대학혁신센터 포럼, 장기적 안목으로 서울대학교의 발전을 논하다</span></a>
-                <a href="index1.3.html"><span class="sub">지난 3월 28일(금), 중앙도서관 관정관 양두석홀에서
-          ‘중장기 발전계획을 기반으로 한 지표체계’를 주제로 공개 포럼이 개최됐다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <a href="index1.4.html"><span class="top">연구성과</span></a>
-                <a href="index1.4.html"><img src="images/04.png" alt="냉각이 필요없는 적외선 센서를 위한 원자 단위 리프트-오프 에피택셜 박막 박리"></a>
-                <a href="index1.4.html"><span class="bold-text">냉각이필요없는적외선센서를위한원<br>자단위 리프트-오프에피택박막박리</span></a>
-                <a href="index1.4.html"><span class="sub">물리천문학부장소연교수팀이별도의냉각장<br>치없이도
+              <a href="index1.1.html"><span class="top">서울대뉴스</span></a>
+              <a href="index1.1.html"><img src="images/01.png" alt="인문학적 공학도의 스토리텔링 연구에 대하여: 제7회 스누인의 연구일지"> </a>
+              <a href="index1.1.html"><span class="bold-text">인문학적 공학도의 스토리텔링 연구에 대하여: 제7회 스누인의 연구일지</span></a>
+              <a href="index1.1.html"><span class="sub">지난 25일, 중앙도서관에서 열린 제7회 '스누인의 연구일
+              지' 강연에서는 인문학과 공학을 융합한 이재성 연구자의 이야기가 소개됐다.</span></a>
+          </div>
+      
+       <div class="grid-container">
+          <a href="index1.2.html"><span class="top">서울대뉴스</span></a>
+          <a href="index1.2.html"><img src="images/02.jpg" alt="학부대학, 융합형 미래 인재를 위한 새로운 교육 플랫폼"></a>
+          <a href="index1.2.html"><span class="bold-text">학부대학, 융합형 미래 인재를 위한 새로운 교육 플랫폼</span></a>
+          <a href="index1.2.html"><span class="sub">요구 속에서 넓은 시야와 문제 해결 역량을 키울 수 있는 새로운 교육
+          체계를 마련하고자 학문 간 경계를 허물고 공통교육을 강화하는 '학부대학'이 출범됐다.</span></a>
+      </div>
+    
+      <div class="grid-container">
+          <!-- 为 <span> 标签添加超链接，可将 href 属性值替换为实际链接地址 -->
+          <a href="index1.3.html"><span class="top">서울대뉴스</span></a>
+          <a href="index1.3.html"><img src="images/03.jpg" alt="대학혁신센터 포럼, 장기적 안목으로 서울대학교의 발전을 논하다"></a>
+          <a href="index1.3.html"><span class="bold-text">대학혁신센터 포럼, 장기적 안목으로 서울대학교의 발전을 논하다</span></a>
+          <a href="index1.3.html"><span class="sub">지난 3월 28일(금), 중앙도서관 관정관 양두석홀에서
+          '중장기 발전계획을 기반으로 한 지표체계'를 주제로 공개 포럼이 개최됐다.</span></a>
+      </div>
+    
+      <div class="grid-container">
+          <a href="index1.4.html"><span class="top">연구성과</span></a>
+          <a href="index1.4.html"><img src="images/04.png" alt="냉각이 필요없는 적외선 센서를 위한 원자 단위 리프트-오프 에피택셜 박막 박리"></a>
+          <a href="index1.4.html"><span class="bold-text">냉각이필요없는적외선센서를위한원<br>자단위 리프트-오프에피택박막박리</span></a>
+          <a href="index1.4.html"><span class="sub">물리천문학부장소연교수팀이별도의냉각장<br>치없이도
              작동 가능한세계최고 성능의적외<br>선센 서를구 현하는데핵심적인박막박
              리기<br>술을개발했다고밝혔다.</span></a>
-            </div>
-
+      </div>
+          
             <div class="grid-container">
-                <a href="index1.5.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.5.html"><img src="images/1.jpg" alt="관악에 울려 퍼지는 봄의 록 스피릿: 관악 AMP UP을 만나다"></a>
-                <a href="index1.5.html"><span class="bold-text">관악에 울려 퍼지는 봄의 록 스피릿: 관악 AMP UP을 만나다</span></a>
-                <a href="index1.5.html"><span class="sub">서울대학교 최초의 공식 록 페스티벌 ‘관악 AMP UP’이 1일(화)부터 2일(수)까지 
+              <a href="index1.5.html"><span class="top">서울대뉴스</span></a>
+              <a href="index1.5.html"><img src="images/1.jpg" alt="관악에 울려 퍼지는 봄의 록 스피릿: 관악 AMP UP을 만나다"></a>
+              <a href="index1.5.html"><span class="bold-text">관악에 울려 퍼지는 봄의 록 스피릿: 관악 AMP UP을 만나다</span></a>
+              <a href="index1.5.html"><span class="sub">서울대학교 최초의 공식 록 페스티벌 '관악 AMP UP'이 1일(화)부터 2일(수)까지 
                   양일간 관악캠퍼스 버들골 풍산마당에서 열렸다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <a href="index1.6.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.6.html"><img src="images/2.png" alt="서울대, 국제특허출원 대학 순위 세계 5위 기록"></a>
-                <a href="index1.6.html"><span class="bold-text">서울대, 국제특허출원 대학 순위 세계 5위 기록</span></a>
-                <a href="index1.6.html"><span class="sub">서울대학교가 세계지식재산기구(WIPO)가 최근 발표한 2024년 
+      </div>
+    
+             <div class="grid-container">
+              <a href="index1.6.html"><span class="top">서울대뉴스</span></a>
+              <a href="index1.6.html"><img src="images/2.png" alt="서울대, 국제특허출원 대학 순위 세계 5위 기록"></a>
+              <a href="index1.6.html"><span class="bold-text">서울대, 국제특허출원 대학 순위 세계 5위 기록</span></a>
+              <a href="index1.6.html"><span class="sub">서울대학교가 세계지식재산기구(WIPO)가 최근 발표한 2024년 
                     국제특허출원(PCT, Patent Cooperation Treaty) 대학 순위에서 세계 5위를 차지했다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <a href="index1.7.html"><span class="top">연구성과</span></a>
-                <a href="index1.7.html"><img src="images/3.jpg" alt="mRNA 백신 작동원리 세계 최초 규명"></a>
-                <a href="index1.7.html"><span class="bold-text">mRNA 백신 작동원리 세계 최초 규명</span></a>
-                <a href="index1.7.html"><span class="sub">새로운 치료 플랫폼으로 주목받고 있는 mRNA 백신을 더욱 효과적이고 안정적으로 
+     </div>
+    
+              <div class="grid-container">
+              <a href="index1.7.html"><span class="top">연구성과</span></a>
+              <a href="index1.7.html"><img src="images/3.jpg" alt="mRNA 백신 작동원리 세계 최초 규명"></a>
+              <a href="index1.7.html"><span class="bold-text">mRNA 백신 작동원리 세계 최초 규명</span></a>
+              <a href="index1.7.html"><span class="sub">새로운 치료 플랫폼으로 주목받고 있는 mRNA 백신을 더욱 효과적이고 안정적으로 
                   개발할 수 있는 실마리를 생명과학부 김빛내리 석좌교수 연구팀이 밝혀냈다.</span></a>
-            </div>
-
+    </div>
+    
             <div class="grid-container">
-                <a href="index1.8.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.8.html"><img src="images/4.jpg" alt="숲을 위한 작은 실천, 학생들이 만든 ‘푸른 상점’"></a>
-                <a href="index1.8.html"><span class="bold-text">숲을 위한 작은 실천, 학생 들 이만 든<br> ‘푸른상점’</span></a>
-                <a href="index1.8.html"><span class="sub">경북의성에서발생해강풍을타고산된산불의<br>피해복구를돕기 
+              <a href="index1.8.html"><span class="top">서울대뉴스</span></a>
+              <a href="index1.8.html"><img src="images/4.jpg" alt="숲을 위한 작은 실천, 학생들이 만든 '푸른 상점'"></a>
+              <a href="index1.8.html"><span class="bold-text">숲을 위한 작은 실천, 학생 들 이만 든<br>  '푸른상점'</span></a>
+              <a href="index1.8.html"><span class="sub">경북의성에서발생해강풍을타고산된산불의<br>피해복구를돕기 
                   위한'FO:RESTORE,숲을되<br>살리는푸른상점'캠페인이지난10일과11일문<br>화관중강당 
                   앞에서열렸다.</spa></a>
-            </div>
-
+    </div>
+    
             <div class="grid-container">
-                <a href="index1.5.html"><span class="top">연구성과</span></a>
-                <a href="index1.5.html"><img src="images/5.png" alt="장기적 규칙적 운동의 인간 뇌 글림파틱 및 뇌수막 림프관 흐름 촉진"></a>
-                <a href="index1.5.html"><span class="bold-text">장기적 규칙적 운동의 인간 뇌 글림파틱 및 뇌수막 림프관 흐름 촉진</span></a>
-                <a href="index1.5.html"><span class="sub">첨단융합학부 최승홍 교수와 체육교육과 김유겸 교수 공동 
+              <a href="index1.5.html"><span class="top">연구성과</span></a>
+              <a href="index1.5.html"><img src="images/5.png" alt="장기적 규칙적 운동의 인간 뇌 글림파틱 및 뇌수막 림프관 흐름 촉진"></a>
+              <a href="index1.5.html"><span class="bold-text">장기적 규칙적 운동의 인간 뇌 글림파틱 및 뇌수막 림프관 흐름 촉진</span></a>
+              <a href="index1.5.html"><span class="sub">첨단융합학부 최승홍 교수와 체육교육과 김유겸 교수 공동 
                  연구팀이 장기간 규칙적 유산소 운동이 글림파틱 흐름과 뇌막 림프관 기능을 
                  강화하여 치매 위험을 잠재적으로 낮출 수 있다고 밝혔다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <a href="index1.6.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.6.html"><img src="images/6.jpg" alt="어둠 속에서 답을 찾다, 암적응(暗適應)"></a>
-                <a href="index1.6.html"><span class="bold-text">어둠 속에서 답을 찾다, 암적응(暗適應)</span></a>
-                <a href="index1.6.html"><span class="sub">4일(금)부터 7일(월)까지 68동 제1파워플랜트에서는 
+    </div>
+    
+             <div class="grid-container">
+              <a href="index1.6.html"><span class="top">서울대뉴스</span></a>
+              <a href="index1.6.html"><img src="images/6.jpg" alt="어둠 속에서 답을 찾다, 암적응(暗適應)"></a>
+              <a href="index1.6.html"><span class="bold-text">어둠 속에서 답을 찾다, 암적응(暗適應)</span></a>
+              <a href="index1.6.html"><span class="sub">4일(금)부터 7일(월)까지 68동 제1파워플랜트에서는 
                  아마추어천문회 AAA(Amateur Astronomy Association 이하 AAA)가 기획한 
                  암적응(暗適應) 전시가 진행되었다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <a href="index1.7.html"><span class="top">서울대뉴스</span></a>
-                <a href="index1.7.html"><img src="images/7.jpg" alt="더 나은 학교를 위한 대화, 총장과 논하는 서울대학교 복지의 오늘"> </a>
-                <a href="index1.7.html"><span class="bold-text">더 나은 학교를 위한 대화, 총장과 논하는 서울대학교 복지의 오늘</span></a>
-                <a href="index1.7.html"><span class="sub">지난 3일 ‘서울대학교의 복지’를 주제로 'on The 
-                 Lounge : 총장과의 대화’가 SNU Commons 중앙도서관 1층에서 열렸다.</span></a>
-            </div>
-
-            <div class="grid-container">
-                <a href="index1.8.html"><span class="top">연구성과</span></a>
-                <a href="index1.8.html"><video class="video-up" controls autoplay width="295" height="201" src="video/8.mp4"></video></a>
-                <a href="index1.8.html"><span class="bold-text">바다의 역할 변화...급격한 탄소 흡수 약화, 기후 위기 더 커질 수도</span></a>
-                <a href="index1.8.html"><span class="sub">지구환경과학부 국종성 교수팀이 점진적인 기후변화 
+     </div>
+    
+             <div class="grid-container">
+              <a href="index1.7.html"><span class="top">서울대뉴스</span></a>
+              <a href="index1.7.html"><img src="images/7.jpg" alt="더 나은 학교를 위한 대화, 총장과 논하는 서울대학교 복지의 오늘"> </a>
+              <a href="index1.7.html"><span class="bold-text">더 나은 학교를 위한 대화, 총장과 논하는 서울대학교 복지의 오늘</span></a>
+              <a href="index1.7.html"><span class="sub">지난 3일 '서울대학교의 복지'를 주제로 'on The 
+                 Lounge : 총장과의 대화'가 SNU Commons 중앙도서관 1층에서 열렸다.</span></a>
+     </div>
+    
+             <div class="grid-container">
+              <a href="index1.8.html"><span class="top">연구성과</span></a>
+              <a href="index1.8.html"><video class="video-up" controls autoplay width="295" height="201" src="video/8.mp4"></video></a>
+              <a href="index1.8.html"><span class="bold-text">바다의 역할 변화...급격한 탄소 흡수 약화, 기후 위기 더 커질 수도</span></a>
+              <a href="index1.8.html"><span class="sub">지구환경과학부 국종성 교수팀이 점진적인 기후변화 
                  상황에서도 북대서양에서는 일정 임계점을 지나면 탄소 흡수 능력이 급격히 
                  약화되는 현상을 확인했다고 밝혔다.</span></a>
-            </div>
-        </div>
     </div>
-    <!--jy-lmq-->
-    <div class="nxl">
-        <link rel="stylesheet" href="nxl.css">
-        <section class="ly-section captionslide">
-            <!-- 轮播容器（控制可见区域） -->
-            <div class="carousel-container">
-                <!-- 轮播项列表 -->
-                <button class="prev-arrow">←</button>
-                <button class="next-arrow">→</button>
-                <!-- 轮播容器（控制可见区域） -->
-                <ul class="instaslide caption-style-2">
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <!-- 每个li对应一个轮播项 -->
-                        <a href="https://www.instagram.com/snu.official/" target="_blank" title="새창으로 열림" rel="noopener noreferrer" data-tabindex="0">
-                            <!-- 链接到Instagram -->
-                            <div class="caption-item">
-                                <!-- 标题和描述 -->
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                    <!-- 相机图标 -->
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/1nxl.jpg" alt="서울대 축제, 함께 즐길 준비 되셨나요?">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <!-- 图标 -->
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>나… 사실 우리 전공 좋아했나…?</h1>
-                                        <p>당신의 일상 속, 나도 모르게 불쑥 튀어나오는 ‘전공병 모먼트’를 공유해주세요!</p>
-                                    </div>
-                                    <!-- 标题和描述 -->
-                                </div>
-                                <!-- 标题和描述 -->
-                            </div>
-                            <!-- 标题和描述 -->
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第二个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.miricanvas.com/v2/design/14jo89t" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/2nxl.jpg" alt="제6회 SNU ‘도서관 옆’ 공공미술 프로젝트 작품을 공모합니다!">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>제6회 SNU ‘도서관 옆’ 공공미술 프로젝트 작품을 공모합니다!</h1>
-                                        <p>학부대학이 주관하는 본 프로젝트는, 서울대학교 학생이라면 누구나 개인 또는 팀으로 참여할 수 있습니다 </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第三个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.instagram.com/p/DJJTGl5PSwy/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/3nxl.png" alt="이동 약자를 위한 계단 정복 활동">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>이동 약자를 위한 계단 정복 활동</h1>
-                                        <p>앱’을 만들기 위해 오늘도 계단을 하나씩 뿌셔가는 중인데요! &lt;서울대사람들&gt;에서 확인하세요!
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第四个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.instagram.com/p/DJGovp1v8OK/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/4nxl.png" alt="바쁜 하루 속, 문득 웃음 짓게 되는 순간들">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>바쁜 하루 속, 문득 웃음 짓게 되는 순간들</h1>
-                                        <p>소소하지만 확실한 행복, 서울대학교에서 함께 느껴보세요! </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第五个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.instagram.com/p/DJEGCRwpAP1/" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/5nxl.jpg" alt="#서울대학사력 2025년 5월">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>#서울대학사력 2025년 5월</h1>
-                                        <p>푸르른 서울대의 5월!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第六个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.instagram.com/p/DJloQxJvSrI/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/6nxl.jpg" alt="SNUFESTIVAL 1일차">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>SNUFESTIVAL 1일차</h1>
-                                        <p>#서울대학교 #서울대축제 #snufestival #대학축제 #SNU</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第七个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.instagram.com/p/DJk7xCcyg27/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/7nxl.png" alt="서울대 축제, 함께 즐길 준비 되셨로 우중 마라톤을 무사히 완주한 여러분, 정말 고생 많으셨습니다!">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>서울대 축제, 함께 즐길 준비 되셨로 우중 마라톤을 무사히 완주한 여러분!</h1>
-                                        <p>카드뉴스 속 꿀팁들과 함께라면, 이번 축제의 주인공은 바로 당신!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第八个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.instagram.com/p/DJYr1xcuwz3/" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/8nxl.jpg" alt="서울대학교 2025 봄축제 〈SNUFESTIVAL: Spring-kle〉">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>서울대학교 2025 봄축제 〈SNUFESTIVAL: Spring-kle〉</h1>
-                                        <p>5월 13일(화)-15일(목) 잔디광장&버들골에서 만나요!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第九个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.youtube.com/watch?v=7t5ezOh8444&list=PLXY68w-grSxtCkZ5aFi8jyMS6VLXaN-wF" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <img src="images/9nxl.jpg" alt="[서막] 샤대에 오징어게임이? 한날한시에 잡혀간 그들">
-                                <div class="snsicon youtube">유튜븨</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>[서막] 샤대에 오징어게임이? 한날한시에 잡혀간 그들</h1>
-                                        <p>서울대 공대의 ‘샤대 오징어게임’!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                    <!--第十个-->
-                    <li class="slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
-                        <a href="https://www.instagram.com/p/DJbU-AVvHMd/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
-                            <div class="caption-item">
-                                <div class="white-circle">
-                                    <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
-                                </div>
-                                <!-- 白色圆圈 -->
-                                <img src="images/10nxl.jpg" alt="비가 와도 굴하지 않는 서울대 러너들!">
-                                <div class="snsicon instagram">인스타그램</div>
-                                <div class="caption">
-                                    <div class="blur"></div>
-                                    <div class="caption-text">
-                                        <h1>비가 와도 굴하지 않는 서울대 러너들!</h1>
-                                        <p>2025 서울대학교 종합마라톤대회에서 우중 마라톤을 무사히 완주한 여러분, 정말 고생 많으셨습니다!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="outline"></div>
-                        </a>
-                    </li>
-                </ul>
-        </section>
-        <div class="ly-container common-linebanner" style="background: #fddeee;">
-            <!-- 背景颜色 -->
-            <a href="https://www.snu.or.kr/snushine" class="inner" target="blank" title="새 창으로 열기" rel="noopener noreferrer">
-                <img src="images/27nxl2.jpg" alt="샤인기부, 당신이 만드는 빛나는 변화, 샤인 굿즈 받기" class="only-mobile">
-            </a>
-        </div>
-        <script>
-            const prevArrow = document.querySelector('.prev-arrow');
-            const nextArrow = document.querySelector('.next-arrow');
-            const slides = document.querySelectorAll('.instaslide li');
-            const slideContainer = document.querySelector('.instaslide');
-            let currentIndex = 0; // 当前显示的幻灯片索引
-            const itemsPerPage = 5; // 每页显示的图片数量
-            const slideWidth = 320; // 单个幻灯片的宽度
-
-            // 初始化显示前五张图片
-            function showSlides() {
-                slides.forEach((slide, index) => {
-                    if (index >= currentIndex && index < currentIndex + itemsPerPage) {
-                        slide.style.display = 'block';
-                    } else {
-                        slide.style.display = 'none';
-                    }
-                });
-            }
-
-            // 初始化显示
-            showSlides();
-
-            prevArrow.addEventListener('click', () => {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    showSlides();
-                }
-            });
-
-            nextArrow.addEventListener('click', () => {
-                if (currentIndex < slides.length - itemsPerPage) {
-                    currentIndex++;
-                    showSlides();
-                }
-            });
-        </script>
-        </div>
-        <!--nxl-->
-        <div class="sy">
-            <link rel="stylesheet" href="./index.css">
-            <div class="view">
-                <header class="header">
-
-                    <img src="images/7sy.png" alt="" />
-                    <div class="Seoul"></div>
-                </header>
-                <ul class="ul">
-
-
-                    <li class="li">
-                        <a href="https://example.com"> <img src="images/1sy.png" /></a>
-                        <footer class="li_footer">
-                            <a href="https://example.com">
-                                <div class="zzz">[R Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="point">05.14.(수) ~ 05.29.(목)</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div>
-                            </a>
-                        </footer>
-                    </li>
-
-
-                    <li class="li">
-                        <a href="https://example.com"> <img src="images/2sy.jpg" /></a>
-                        <footer class="li_footer">
-                            <a href="https://example.com">
-                                <div class="zzz">[SNU IR Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="point">05.14.(수) ~ 05.29.(목)</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div>
-                            </a>
-                        </footer>
-                    </li>
-
-
-                    <li class="li">
-                        <a href="https://example.com"> <img src="images/3sy.png" /></a>
-                        <footer class="li_footer">
-                            <a href="https://example.com">
-                                <div class="zzz">[SNU IR Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="point">05.14.(수) ~ 05.29.(목)</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div>
-                            </a>
-                        </footer>
-                    </li>
-
-
-                    <li class="li">
-                        <a href="https://example.com"> <img src="images/4sy.png" /></a>
-                        <footer class="li_footer">
-                            <a href="https://example.com">
-                                <div class="zzz">[SNU IR Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="point">05.14.(수) ~ 05.29.(목)</div>
-                            </a>
-                            <a href="https://example.com">
-                                <div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div>
-                            </a>
-                        </footer>
-                    </li>
-                </ul>
-                <a href="https://example.com">
-                    <div class="link">SNU 캘린더 더보기</div>
-                </a>
+    </div>
+   </div>   <!--jy-lmq-->
+   <div class="nxl">
+    <link rel="stylesheet" href="nxl.css">
+    <section class="ly-section captionslide">
+      <!-- 轮播容器（控制可见区域） -->
+      <div class="carousel-container">
+          <!-- 轮播项列表 -->
+          <button class="prev-arrow">←</button>
+          <button class="next-arrow">→</button>
+          <!-- 轮播容器（控制可见区域） -->
+       <ul class="instaslide caption-style-2"> 
+           <li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false"> <!-- 每个li对应一个轮播项 -->
+               <a href="https://www.instagram.com/snu.official/" target="_blank" title="새창으로 열림" rel="noopener noreferrer" data-tabindex="0"> <!-- 链接到Instagram -->
+                <div class="caption-item"> <!-- 标题和描述 -->
+                  <div class="white-circle">
+                      <img src="images/12nxl.png" alt="相机图标" class="camera-icon"> <!-- 相机图标 -->
+                  </div> <!-- 白色圆圈 -->
+                  <img src="images/1nxl.jpg" alt="서울대 축제, 함께 즐길 준비 되셨나요?">
+                <div class="snsicon instagram">인스타그램</div>   <!-- 图标 -->
+                <div class="caption"> 
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h1>나… 사실 우리 전공 좋아했나…?</h1>
+                  <p>당신의 일상 속, 나도 모르게 불쑥 튀어나오는 '전공병 모먼트'를 공유해주세요!</p>
+             </div> <!-- 标题和描述 -->
+           </div> <!-- 标题和描述 -->
+         </div> <!-- 标题和描述 -->
+        <div class="outline"></div>
+      </a>
+    </li>
+<!--第二个-->
+    <li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+      <a href="https://www.miricanvas.com/v2/design/14jo89t" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+        <div class="caption-item">
+          <div class="white-circle">
+              <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+          </div> <!-- 白色圆圈 -->
+          <img src="images/2nxl.jpg" alt="제6회 SNU '도서관 옆' 공공미술 프로젝트 작품을 공모합니다!">
+          <div class="snsicon instagram">인스타그램</div>
+          <div class="caption">
+            <div class="blur"></div>
+            <div class="caption-text">
+              <h1>제6회 SNU '도서관 옆' 공공미술 프로젝트 작품을 공모합니다!</h1>
+              <p>학부대학이 주관하는 본 프로젝트는, 서울대학교 학생이라면 누구나 개인 또는 팀으로 참여할 수 있습니다 </p>
             </div>
-
-            <footer class="footer">
-                <div>
-                    <div class="footer_left">
-                        <div class="fl_img">
-                            <a href="https://example.com"> <img src="images/8sy.png" alt="" /></a>
-                            <a href="https://example.com"><img src="images/9sy.png" alt="" /></a>
-                            <a href="https://example.com"><img src="images/10sy.png" alt="" /></a>
-                            <a href="https://example.com"><img src="images/11sy.png" alt="" /></a>
-                            <a href="https://example.com"><img src="images/12sy.png" alt="" /></a>
-                        </div>
-                        <ul class="terms-ul">
-                            <a href="https://example.com">
-                                <li>정보공시</li>
-                            </a>
-                            <span class="separator">|</span>
-                            <a href="https://example.com">
-                                <li>전화번호/사이트 안내</li>
-                            </a>
-                            <span class="separator">|</span>
-                            <a href="https://example.com">
-                                <li>서울대포털</li>
-                            </a>
-                            <span class="separator">|</span>
-                            <a href="https://example.com">
-                                <li>클린행정센터</li>
-                            </a>
-                            <span class="separator">|</span>
-                            <a href="https://example.com">
-                                <li class="privacy-policy">개인정보처리방침</li>
-                            </a>
-
-                            <span class="separator">|</span>
-                            <a href="https://example.com">
-                                <li>이메일무단수집거부</li>
-                            </a>
-
-                            <span class="separator">|</span>
-                            <a href="https://example.com">
-                                <li>복지보조금 부정 신고</li>
-                            </a>
-                            <span class="separator">|</span>
-                            <a href="https://example.com">
-                                <li>사이트맵</li>
-                            </a>
-                        </ul>
-
-
-                        <div class="area-address">
-                            <span>08826 서울시 관악구 관악로 1 서울대학교</span>
-                            <span class="separator2">|</span>
-                            <span>TEL.<a href="https://example.com">(02) 880-5114 </span></a>
-                            <span class="separator2">|</span>
-                            <span>FAX. (02) 885-5272</span>
-                        </div>
-                        <div class="area-copy">Copyright 2025 Seoul National University All Rights Reserved.</div>
-                    </div>
-                    <div class="footer_right">
-                        <a href="https://example.com"><img src="images/5sy.png" /></a>
-                        <a href="https://example.com"><img src="images/6sy.png" /></a>
-                    </div>
-                </div>
-            </footer>
-
+          </div>
         </div>
-        <!--sy-->
-</body>
+        <div class="outline"></div>
+      </a>
+    </li>
+<!--第三个-->
+    <li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+      <a href="https://www.instagram.com/p/DJJTGl5PSwy/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+        <div class="caption-item">
+          <div class="white-circle">
+              <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+          </div> <!-- 白色圆圈 -->
+          <img src="images/3nxl.png" alt="이동 약자를 위한 계단 정복 활동">
+          <div class="snsicon instagram">인스타그램</div>
+          <div class="caption">
+            <div class="blur"></div>
+            <div class="caption-text">
+              <h1>이동 약자를 위한 계단 정복 활동</h1>
+              <p>앱'을 만들기 위해 오늘도 계단을 하나씩 뿌셔가는 중인데요!
+                   &lt;서울대사람들&gt;에서 확인하세요!
+                   
+            </div>
+          </div>
+        </div>
+        <div class="outline"></div>
+      </a>
+    </li>
+<!--第四个-->
+<li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+  <a href="https://www.instagram.com/p/DJGovp1v8OK/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+    <div class="caption-item">
+      <div class="white-circle">
+          <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+      </div> <!-- 白色圆圈 -->
+      <img src="images/4nxl.png" alt="바쁜 하루 속, 문득 웃음 짓게 되는 순간들">
+      <div class="snsicon instagram">인스타그램</div>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1>바쁜 하루 속, 문득 웃음 짓게 되는 순간들</h1>
+          <p>소소하지만 확실한 행복, 서울대학교에서 함께 느껴보세요! </p>
+        </div>
+      </div>
+    </div>
+    <div class="outline"></div>
+  </a>
+</li>
+<!--第五个-->
+<li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+  <a href="https://www.instagram.com/p/DJEGCRwpAP1/" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+    <div class="caption-item">
+      <div class="white-circle">
+          <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+      </div> <!-- 白色圆圈 -->
+      <img src="images/5nxl.jpg" alt="#서울대학사력 2025년 5월">
+      <div class="snsicon instagram">인스타그램</div>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1>#서울대학사력 2025년 5월</h1>
+          <p>푸르른 서울대의 5월!</p>
+        </div>
+      </div>
+    </div>
+    <div class="outline"></div>
+  </a>
+</li>
+<!--第六个-->
+<li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+  <a href="https://www.instagram.com/p/DJloQxJvSrI/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+    <div class="caption-item">
+      <div class="white-circle">
+          <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+       </div> <!-- 白色圆圈 -->
+      <img src="images/6nxl.jpg" alt="SNUFESTIVAL 1일차">
+      <div class="snsicon instagram">인스타그램</div>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1>SNUFESTIVAL 1일차</h1>
+          <p>#서울대학교 #서울대축제 #snufestival #대학축제 #SNU</p>
+        </div>
+      </div>
+    </div>
+    <div class="outline"></div>
+  </a>
+</li>
+<!--第七个-->
+<li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+  <a href="https://www.instagram.com/p/DJk7xCcyg27/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+    <div class="caption-item">
+      <div class="white-circle">
+          <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+      </div> <!-- 白色圆圈 -->
+      <img src="images/7nxl.png" alt="서울대 축제, 함께 즐길 준비 되셨로 우중 마라톤을 무사히 완주한 여러분, 정말 고생 많으셨습니다!">
+      <div class="snsicon instagram">인스타그램</div>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1>서울대 축제, 함께 즐길 준비 되셨로 우중 마라톤을 무사히 완주한 여러분!</h1>
+          <p>카드뉴스 속 꿀팁들과 함께라면, 이번 축제의 주인공은 바로 당신!</p>
+        </div>
+      </div>
+    </div>
+    <div class="outline"></div>
+  </a>
+</li>
+<!--第八个-->
+<li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+  <a href="https://www.instagram.com/p/DJYr1xcuwz3/" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+    <div class="caption-item">
+      <div class="white-circle">
+          <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+      </div> <!-- 白色圆圈 -->
+      <img src="images/8nxl.jpg" alt="서울대학교 2025 봄축제 〈SNUFESTIVAL: Spring-kle〉">
+      <div class="snsicon instagram">인스타그램</div>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1>서울대학교 2025 봄축제 〈SNUFESTIVAL: Spring-kle〉</h1>
+          <p>5월 13일(화)-15일(목) 잔디광장&버들골에서 만나요!</p>
+        </div>
+      </div>
+    </div>
+    <div class="outline"></div>
+  </a>
+</li>
+<!--第九个-->
+<li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+  <a href="https://www.youtube.com/watch?v=7t5ezOh8444&list=PLXY68w-grSxtCkZ5aFi8jyMS6VLXaN-wF" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+    <div class="caption-item">
+      <div class="white-circle">
+          <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+      </div>
+      <img src="images/9nxl.jpg" alt="[서막] 샤대에 오징어게임이? 한날한시에 잡혀간 그들">
+      <div class="snsicon youtube">유튜븨</div>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1>[서막] 샤대에 오징어게임이? 한날한시에 잡혀간 그들</h1>
+          <p>서울대 공대의 '샤대 오징어게임'!</p>
+        </div>
+      </div>
+    </div>
+    <div class="outline"></div>
+  </a>
+</li>
+<!--第十个-->
+<li class= "slick-slide slick-current slick-active" style="width: 320px;" data-tabindex="0" data-slick-index="0" aria-hidden="false">
+  <a href="https://www.instagram.com/p/DJbU-AVvHMd/?img_index=1" target="_blank" title="새창으로 열림" rel="noopener noreferrer">
+    <div class="caption-item">
+      <div class="white-circle">
+          <img src="images/12nxl.png" alt="相机图标" class="camera-icon">
+      </div> <!-- 白色圆圈 -->
+      <img src="images/10nxl.jpg" alt="비가 와도 굴하지 않는 서울대 러너들!">
+      <div class="snsicon instagram">인스타그램</div>
+      <div class="caption">
+        <div class="blur"></div>
+        <div class="caption-text">
+          <h1>비가 와도 굴하지 않는 서울대 러너들!</h1>
+          <p>2025 서울대학교 종합마라톤대회에서 우중 마라톤을 무사히 완주한 여러분, 정말 고생 많으셨습니다!</p>
+        </div>
+      </div>
+    </div>
+    <div class="outline"></div>
+  </a>
+</li>         
+</ul>
+</section>
+<div class="ly-container common-linebanner" style="background: #fddeee;"> <!-- 背景颜色 -->
+  <a href="https://www.snu.or.kr/snushine" class="inner" target="blank" title="새 창으로 열기" rel="noopener noreferrer"> 
+    <img src="images/27nxl2.jpg" alt="샤인기부, 당신이 만드는 빛나는 변화, 샤인 굿즈 받기" class="only-mobile">
+  </a>
+</div>
+<script>
+  const prevArrow = document.querySelector('.prev-arrow'); 
+  const nextArrow = document.querySelector('.next-arrow'); 
+  const slides = document.querySelectorAll('.instaslide li'); 
+  const slideContainer = document.querySelector('.instaslide');
+  let currentIndex = 0; // 当前显示的幻灯片索引
+  const itemsPerPage = 5; // 每页显示的图片数量
+  const slideWidth = 320; // 单个幻灯片的宽度
 
+  // 初始化显示前五张图片
+  function showSlides() {
+      slides.forEach((slide, index) => {
+          if (index >= currentIndex && index < currentIndex + itemsPerPage) {
+              slide.style.display = 'block';
+          } else {
+              slide.style.display = 'none';
+          }
+      });
+  }
+
+  // 初始化显示
+  showSlides();
+
+  prevArrow.addEventListener('click', () => {
+      if (currentIndex > 0) {
+          currentIndex--;
+          showSlides();
+      }
+  });
+
+  nextArrow.addEventListener('click', () => {
+      if (currentIndex < slides.length - itemsPerPage) {
+          currentIndex++;
+          showSlides();
+      }
+  });
+</script>
+    </div> <!--nxl-->
+    <div class="sy">
+        <link rel="stylesheet" href="./index.css" > 
+        <div class="view">
+            <header class="header">
+            
+              <img src="images/7sy.png" alt="" />
+              <div class="Seoul"></div>
+            </header>
+            <ul class="ul">
+      
+              
+              <li class="li">            
+                  <a href="https://example.com"> <img src="images/1sy.png" /></a>
+                <footer class="li_footer">
+                  <a href="https://example.com"><div class="zzz">[R Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div></a>
+                  <a href="https://example.com"><div class="point">05.14.(수) ~ 05.29.(목)</div></a>
+                  <a href="https://example.com"><div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div></a>
+                </footer>
+              </li>
+      
+      
+              <li class="li">
+                <a href="https://example.com"> <img src="images/2sy.jpg" /></a>
+                <footer class="li_footer">
+                  <a href="https://example.com"><div class="zzz">[SNU IR Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div></a>
+                  <a href="https://example.com"><div class="point">05.14.(수) ~ 05.29.(목)</div></a>
+                  <a href="https://example.com"><div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div></a>
+                </footer>
+              </li>
+      
+      
+              <li class="li">
+                <a href="https://example.com"> <img src="images/3sy.png" /></a>
+                <footer class="li_footer">
+                  <a href="https://example.com"><div class="zzz">[SNU IR Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div></a>
+                  <a href="https://example.com"><div class="point">05.14.(수) ~ 05.29.(목)</div></a>
+                  <a href="https://example.com"><div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div></a>
+                </footer>
+              </li>
+      
+      
+              <li class="li">
+                <a href="https://example.com"> <img src="images/4sy.png" /></a>
+                <footer class="li_footer">
+                  <a href="https://example.com"><div class="zzz">[SNU IR Club]2025년 5월 투자사 Meet-up 미니 특강 안내</div></a>
+                  <a href="https://example.com"><div class="point">05.14.(수) ~ 05.29.(목)</div></a>
+                  <a href="https://example.com"><div class="f">안녕하세요. 서울대학교 창업지원단입니다. SNU IR Club 2025년 5월 투자사 밋업 일정을 안내드립니다.</div></a>
+                </footer>
+              </li>
+            </ul>
+            <a href="https://example.com"><div class="link">SNU 캘린더 더보기</div></a>
+          </div>
+      
+          <footer class="footer">
+            <div>
+              <div class="footer_left">
+                <div class="fl_img">
+                 <a href="https://example.com"> <img src="images/8sy.png" alt="" /></a>
+                  <a href="https://example.com"><img src="images/9sy.png" alt="" /></a>
+                  <a href="https://example.com"><img src="images/10sy.png" alt="" /></a>
+                  <a href="https://example.com"><img src="images/11sy.png" alt="" /></a>
+                  <a href="https://example.com"><img src="images/12sy.png" alt="" /></a>
+                </div>
+                <ul class="terms-ul">
+                  <a href="https://example.com"><li>정보공시</li></a>
+                  <span class="separator">|</span>
+                  <a href="https://example.com"><li>전화번호/사이트 안내</li></a>
+                  <span class="separator">|</span>
+                  <a href="https://example.com"><li>서울대포털</li></a>
+                  <span class="separator">|</span>
+                  <a href="https://example.com"><li>클린행정센터</li></a>
+                  <span class="separator">|</span>
+                  <a href="https://example.com"><li class="privacy-policy">개인정보처리방침</li></a>
+                  
+                  <span class="separator">|</span>
+                  <a href="https://example.com"><li>이메일무단수집거부</li></a>
+                
+                  <span class="separator">|</span>
+                  <a href="https://example.com"><li>복지보조금 부정 신고</li></a>
+                  <span class="separator">|</span>
+                  <a href="https://example.com"><li>사이트맵</li></a>
+                </ul>
+      
+      
+                <div class="area-address">
+                  <span>08826 서울시 관악구 관악로 1 서울대학교</span>
+                  <span class="separator2">|</span>
+                 <span>TEL.<a href="https://example.com">(02) 880-5114 </span></a>
+                  <span class="separator2">|</span>
+                  <span>FAX. (02) 885-5272</span>
+                </div>
+                <div class="area-copy">Copyright 2025 Seoul National University All Rights Reserved.</div>
+              </div>
+              <div class="footer_right">
+                <a href="https://example.com"><img src="images/5sy.png" /></a>
+                <a href="https://example.com"><img src="images/6sy.png" /></a>
+              </div>
+            </div>
+          </footer>
+      
+      </div> <!--sy-->
+    <script src="script.js"></script>
+  </body>
 </html>

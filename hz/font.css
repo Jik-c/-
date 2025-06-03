@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/font/noto-sans-kr-v8-korean-regular.woff2");
+
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: url("/font/noto-sans-kr-v8-korean-500.woff2");
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url("/font/noto-sans-kr-v8-korean-700.woff2");
+}
+
+@font-face {
+    font-family: 'Noto Serif KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/font/noto-serif-kr-v6-latin_korean-regular.woff2");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url("/font/roboto-v18-latin-500.woff2");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url("/font/roboto-v18-latin-700.woff2");
+}

@@ -1,6 +1,5 @@
 /* 全局样式 */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -10,15 +9,12 @@ a {
 }
 .main-container {
     position: relative;
-
-    width: 98%;
-    height: 800px /* 视窗高度 */
-    
+    width: 100%;
+    height: 800px; /* 视窗高度 */
 }
 .banner-video00 {
     position: relative; /* 设置定位方式 */
-    left: 13%; /* 水平居中 */;
-    width: 89.01%; 
+    width: 100%; 
     /* 修改视频高度，你可以根据需求调整数值 */
     height: 772px;  
     object-fit: cover; /* 保持视频的宽高比并覆盖整个容器 */
